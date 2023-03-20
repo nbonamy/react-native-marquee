@@ -44,7 +44,7 @@ module.exports = React.createClass({
             list: this.props.children.split(''),
         };
     },
-    componentWillReceiveProps (nextProps) {
+    UNSAFE_componentWillReceiveProps (nextProps) {
         if (this.props.children != nextProps.children) {
             this.animateEnable = false;
             this.width = 0;
